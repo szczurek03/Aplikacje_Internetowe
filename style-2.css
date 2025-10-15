@@ -1,0 +1,175 @@
+body{   
+    margin: 0;
+    padding: 0;
+    background-color: rgb(155, 235, 255);
+    font-family: "Changa", sans-serif;    
+    
+}
+header h1{
+
+    font-size: 6vw;
+    margin: 0;
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow:
+    0 0 3px #292525,
+    0 0 3px #292525,
+    0 0 3px #292525,
+    0 0 3px #292525,
+    0 0 3px #292525;
+    
+}
+
+header h2{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 3vw;
+    text-shadow:
+    0 0 3px #292525,
+    0 0 3px #292525,
+    0 0 3px #292525,
+    0 0 3px #292525,
+    0 0 3px #292525;
+}
+
+header {
+    background: url('clouds2.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    width: 100%;
+}
+nav{
+    background-color: #002152;
+    padding: 8px;
+}
+nav a {
+    color: white;
+    font-size: 2vw;
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: "Pixelify Sans", sans-serif;
+    
+}
+
+.offer {
+    
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 4px solid #ffffff;
+    outline: 4px solid #292525;
+    background-image: linear-gradient(to bottom,rgb(23, 123, 255),rgb(7, 70, 153));
+    width: 90%;
+    padding: 2.5vw;
+}
+
+.text {
+    text-align: center; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.text h2 {
+    font-size: 80px;
+    font-family: "Pixelify Sans", sans-serif;
+    color:#002152;
+    margin: 0;
+}
+
+.text h3 {
+
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" -4;
+
+    border: 4px solid #ffffff;
+    padding: 10px;
+    font-size: 30px;
+    color:#d6f5ff;
+    background: #002152;
+    text-shadow:
+                0 0 3px #002152,
+                0 0 3px #002152,
+                0 0 3px #002152,
+                0 0 3px #002152,
+                0 0 3px #002152;
+    width: 75vw;
+    text-align: center;
+
+}
+
+.text p {
+    font-size: 18px;
+    color: white;
+}
+
+.text ul 
+{
+    font-family: "Pixelify Sans", sans-serif;
+    list-style-type:square;
+    color:#ffffff;
+    background-color: rgb(73, 150, 250);
+    padding: 30px;
+    box-shadow: rgb(255, 255, 255) 5px 5px;
+    font-size: 20px;
+}
+
+.text ul li{
+    margin: 5px 0;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #002152;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer ul {
+    font-family: "Pixelify Sans", sans-serif;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+@media screen and (max-width: 430px) {
+    .offer {
+        width: 90%;
+        padding: 2.5vw;
+    }
+    header h1{
+        font-size: 9vw;
+    }
+    header h2 {
+        font-size: 8vw;
+    }
+    .text h2 {
+        font-size: 40px;
+    }
+    .text h3 {
+        font-size: 20px;
+        width: 280px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text ul {
+        font-size: 16px;
+    }
+    nav a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+}

@@ -1,0 +1,145 @@
+body{   
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #EED296;
+}
+header {
+    background: url('pine.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    width: 100%;
+}
+
+header h1{
+    font-size: 6vw;
+    margin: 0;
+    text-decoration-line: underline;
+}
+header h2 {
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-size: 3vw;
+}
+
+nav{
+    background-color: #20090979;
+    padding: 12px;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+nav a:hover {
+    color: rgb(214, 212, 185);
+}
+
+
+.offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-image: linear-gradient(to bottom, rgb(31, 56, 36), rgb(18, 37, 22));
+    border: 4px solid #5c4033;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.text h2 {
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 3px 3px 2px #443c2988;
+    margin: 0;
+    text-align: center;
+    border: 4px inset #234422;
+    background-color: #192b1c;
+    border-radius: 15px;
+}
+.text h3 {
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+    color:#d3a46e;
+    text-shadow:
+                0 0 3px #443c29,
+                0 0 3px #443c29,
+                0 0 3px #443c29,
+                0 0 3px #443c29,
+                0 0 3px #443c29;
+}
+
+
+
+.text p {
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    border: 4px dashed #234422;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #292525;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    color:#eedebb;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+.text ul 
+{
+    list-style-type:circle;
+    color:#eedebb;
+    background-color: #292525;
+    padding: 30px;
+    box-shadow: rgb(12, 26, 15) 5px 5px 5px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 430px) {
+    .offer {
+        width: 90%;
+        padding: 2.5vw;
+    }
+    header h1{
+        font-size: 16vw;
+    }
+    header h2 {
+        font-size: 10vw;
+    }
+    .text h2 {
+        font-size: 40px;
+    }
+    .text h3 {
+        font-size: 30px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text ul {
+        font-size: 16px;
+    }
+    nav a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
