@@ -1,0 +1,56 @@
+body { 
+    font-family: Arial, sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffd9e7;
+    
+}
+#full-list {
+    padding: 10px;
+    width: 60vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('cherry.png'), linear-gradient(to bottom, #ca7192, #d9e2ec);
+    background-repeat: repeat, no-repeat;
+    border: 4px solid #000;
+
+}
+.searchbox, #tasks, .bottom-section {
+    width: 60vw; 
+}
+.bottom-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.bottom-section #addbtn {
+    margin-left: auto;
+}
+.task { 
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.delbtn{
+    margin-left: auto;
+    background-color: #ca7192;
+}
+#addbtn {
+    background-color: #ca7192;
+    color:aliceblue
+}
+#tasks { 
+    list-style: none; padding: 0; 
+    text-shadow: #d9e2ec 1px 1px 2px;
+}
+
+.task-item { 
+    margin: 5px 0; display: flex; align-items: center; 
+}
+
+.delete-btn { 
+    margin-left: 10px; cursor: pointer; 
+}
