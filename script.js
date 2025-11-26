@@ -107,5 +107,6 @@ document.weatherApp = new WeatherApp("d3d1e008230720039a3771aa982da1b3", "#weath
 
 document.querySelector("#checkButton").addEventListener("click", function() {
     const query = document.querySelector("#locationInput").value;
-    document.weatherApp.getForecast(query);
+    document.weatherApp.getWeather(query);
+
 });
