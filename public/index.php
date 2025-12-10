@@ -38,6 +38,35 @@ switch ($action) {
         $controller = new \App\Controller\PostController();
         $view = $controller->deleteAction($_REQUEST['id'], $router);
         break;
+    case 'animal-index':
+        $controller = new \App\Controller\AnimalController();
+        $view = $controller->indexAction($templating, $router);
+        break;
+    case 'animal-create':
+        $controller = new \App\Controller\AnimalController();
+        $view = $controller->createAction($_REQUEST['animal'] ?? null, $templating, $router);
+        break;
+    case 'animal-edit':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\AnimalController();
+        $view = $controller->editAction($_REQUEST['id'], $_REQUEST['animal'] ?? null, $templating, $router);
+        break;
+    case 'animal-show':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\AnimalController();
+        $view = $controller->showAction($_REQUEST['id'], $templating, $router);
+        break;
+    case 'animal-delete':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\AnimalController();
+        $view = $controller->deleteAction($_REQUEST['id'], $router);
+        break;
     case 'info':
         $controller = new \App\Controller\InfoController();
         $view = $controller->infoAction();
